@@ -1,0 +1,157 @@
+:root {
+  --vp-c-brand-1: #0078D7;
+  --vp-c-brand-2: #006abc;
+  --vp-c-brand-3: #005a9f;
+  --vp-c-brand-soft: rgba(0, 120, 215, 0.16);
+}
+
+.dark {
+  --vp-c-brand-1: #3395FF;
+  --vp-c-brand-2: #66b3ff;
+  --vp-c-brand-3: #99d1ff;
+  --vp-c-brand-soft: rgba(51, 149, 255, 0.16);
+}
+
+/* Yomic Theme Overrides */
+.VPImage.logo {
+  border-radius: 4px;
+}
+
+.VPHero .image-bg {
+  background: var(--vp-c-brand-1);
+  filter: blur(80px);
+  opacity: 0.2;
+}
+
+/* Enlarge Hero Image & Container */
+.VPHero .image-container {
+  width: 340px;
+  height: 340px;
+}
+
+.VPHero .image-src {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.VPHero .image-bg {
+  width: 280px;
+  height: 280px;
+}
+
+@media (min-width: 640px) {
+  .VPHero .image-container {
+    width: 480px;
+    height: 480px;
+  }
+  .VPHero .image-src {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .VPHero .image-bg {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero .image-container {
+    width: 100%;
+    height: 100%;
+  }
+  .VPHero .image-src {
+    max-width: 520px;
+    max-height: 520px;
+  }
+  .VPHero .image-bg {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .VPHero .image-src {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .VPHero .image-bg {
+    width: 580px;
+    height: 580px;
+  }
+}
+
+
+/* Windows Download Image Button - inline with hero actions */
+.VPHero .main {
+  position: relative;
+}
+
+.VPHero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0 !important; /* Remove internal padding that offsets vertical alignment */
+  margin-top: 24px;
+}
+
+.win-download-btn-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px; /* Match the margin-top of .actions */
+  justify-content: flex-start;
+}
+
+.win-download-btn img {
+  height: 40px !important; /* Resize to match the default VitePress button height */
+  width: auto;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .VPHero .actions {
+    display: inline-flex;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .win-download-btn-wrapper {
+    display: inline-flex;
+    margin-top: 24px; /* Ensure it stays aligned with the same top offset */
+    margin-left: 6px; /* Bring it closer to match VitePress's default spacing */
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 639px) {
+  .VPHero .actions {
+    justify-content: center;
+  }
+  .win-download-btn-wrapper {
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px; /* Add some space below the actions on mobile */
+  }
+}
+
+/* Theme Transition (View Transitions API) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+.VPSwitchAppearance {
+  width: 22px !important;
+}
+
+.VPSwitchAppearance .check {
+  transform: none !important;
+}
