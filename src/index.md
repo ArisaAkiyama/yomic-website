@@ -7,7 +7,8 @@ hero:
   text: Desktop Manga Reader
   tagline: Read your favorite manga, webtoons, and comics on Windows, macOS, and Linux with a beautiful, modern interface.
   image:
-    src: /img/screenshot.png
+    light: /img/mock_laptop_light.png
+    dark: /img/mock_laptop_dark.png
     alt: Yomic Library
   actions:
     - theme: brand
