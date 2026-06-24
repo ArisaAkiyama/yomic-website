@@ -155,3 +155,16 @@
 .VPSwitchAppearance .check {
   transform: none !important;
 }
+
+/* Move theme toggle next to search icon on mobile */
+@media (max-width: 959px) {
+  .VPNavBar .appearance {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px 0 12px !important;
+  }
+  .VPNavScreenAppearance {
+    display: none !important;
+  }
+}
