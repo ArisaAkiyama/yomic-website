@@ -156,15 +156,17 @@
   transform: none !important;
 }
 
-/* Move theme toggle next to search icon on mobile */
+/* Mobile Header Theme Switcher */
 @media (max-width: 959px) {
-  .VPNavBar .appearance {
+  .VPNavBarAppearance {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    margin: 0 8px 0 12px !important;
+    margin-right: 12px;
   }
-  .VPNavScreenAppearance {
-    display: none !important;
-  }
+}
+
+/* Hide appearance toggle from mobile menu screen */
+.VPNavScreenAppearance {
+  display: none !important;
 }
