@@ -6,6 +6,7 @@
   <div class="win-download-btn-wrapper">
     <a
       href="/api/download"
+      target="_self"
       class="win-download-btn"
       title="Download for Windows"
     >
