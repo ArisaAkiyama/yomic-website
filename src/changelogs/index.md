@@ -17,10 +17,10 @@ const formatDate = (dateString) => {
 The full history of releases and changes can be found in our main repository.
 
 <div v-for="release in releases" :key="release.tag" class="release-item" style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--vp-c-divider);">
-  <h2 :id="release.tag" style="margin-top: 1rem; border-top: none; padding-top: 0;">
+  <h2 :id="release.tag" style="margin-top: 1rem; margin-bottom: 0.5rem; border-top: none; padding-top: 0;">
     <a :href="release.url" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">{{ release.name }}</a>
-    <span style="font-size: 0.7em; font-weight: normal; color: var(--vp-c-text-2); margin-left: 1rem; display: inline-block;">{{ formatDate(release.date) }}</span>
   </h2>
+  <div style="font-size: 0.9em; color: var(--vp-c-text-2); margin-bottom: 1rem;">{{ formatDate(release.date) }}</div>
   <div class="release-body custom-block" v-html="release.html"></div>
 </div>
 
