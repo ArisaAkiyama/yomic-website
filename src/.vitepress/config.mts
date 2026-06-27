@@ -20,13 +20,42 @@ export default defineConfig({
         ],
         sidebar: {
           '/docs/': [
+            { text: 'Download', link: '/download/' },
+            { text: 'Changelogs', link: '/changelogs/' },
+            {
+              text: 'Frequently Asked Questions',
+              items: [
+                { text: 'General', link: '/docs/faq/general' },
+                { text: 'Library', link: '/docs/faq/library' }
+              ]
+            },
+            {
+              text: 'Updates',
+              items: [
+                { text: 'Smart updates', link: '/docs/updates/smart-updates' },
+                { text: 'Upcoming', link: '/docs/updates/upcoming' }
+              ]
+            },
+            {
+              text: 'Browse',
+              items: [
+                { text: 'Downloads', link: '/docs/browse/downloads' }
+              ]
+            },
+            { text: 'Reader', link: '/docs/reader' },
+            { text: 'Settings', link: '/docs/settings' },
+            { text: 'Storage', link: '/docs/storage' },
             {
               text: 'Guides',
               items: [
-                { text: 'Getting Started', link: '/docs/guides/getting-started' },
-                { text: 'Extensions', link: '/docs/guides/extensions' },
-                { text: 'Reader Settings', link: '/docs/guides/reader-settings' },
-                { text: 'Troubleshooting', link: '/docs/guides/troubleshooting' }
+                { text: 'Getting started', link: '/docs/guides/getting-started' },
+                { text: 'Troubleshooting', link: '/docs/guides/troubleshooting' },
+                { text: 'Source migration', link: '/docs/guides/source-migration' },
+                { text: 'Backups', link: '/docs/guides/backups' },
+                { text: 'Tracking', link: '/docs/guides/tracking' },
+                { text: 'Categories', link: '/docs/guides/categories' },
+                { text: 'Local source', link: '/docs/guides/local-source' },
+                { text: 'Reader settings', link: '/docs/guides/reader-settings' }
               ]
             }
           ]
