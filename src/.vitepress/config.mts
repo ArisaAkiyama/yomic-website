@@ -25,7 +25,8 @@ export default defineConfig({
               items: [
                 { text: 'Getting Started', link: '/docs/guides/getting-started' },
                 { text: 'Extensions', link: '/docs/guides/extensions' },
-                { text: 'Reader Settings', link: '/docs/guides/reader-settings' }
+                { text: 'Reader Settings', link: '/docs/guides/reader-settings' },
+                { text: 'Troubleshooting', link: '/docs/guides/troubleshooting' }
               ]
             }
           ]
@@ -50,7 +51,8 @@ export default defineConfig({
               items: [
                 { text: 'Memulai', link: '/id/docs/guides/getting-started' },
                 { text: 'Ekstensi', link: '/id/docs/guides/extensions' },
-                { text: 'Pengaturan Pembaca', link: '/id/docs/guides/reader-settings' }
+                { text: 'Pengaturan Pembaca', link: '/id/docs/guides/reader-settings' },
+                { text: 'Penyelesaian Masalah', link: '/id/docs/guides/troubleshooting' }
               ]
             }
           ]
