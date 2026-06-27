@@ -80,13 +80,47 @@ export default defineConfig({
         ],
         sidebar: {
           '/id/docs/': [
+            { text: 'Unduh', link: '/id/download/' },
+            { text: 'Catatan Rilis', link: '/id/changelogs/' },
+            {
+              text: 'Pertanyaan Umum',
+              items: [
+                { text: 'Umum', link: '/id/docs/faq/general' },
+                { text: 'Perpustakaan', link: '/id/docs/faq/library' }
+              ]
+            },
+            {
+              text: 'Pembaruan',
+              items: [
+                { text: 'Pembaruan Pintar', link: '/id/docs/updates/smart-updates' },
+                { text: 'Jadwal Rilis', link: '/id/docs/updates/upcoming' }
+              ]
+            },
+            {
+              text: 'Jelajah',
+              items: [
+                { text: 'Unduhan', link: '/id/docs/browse/downloads' }
+              ]
+            },
+            {
+              text: 'Aplikasi',
+              items: [
+                { text: 'Pembaca', link: '/id/docs/core/reader' },
+                { text: 'Pengaturan', link: '/id/docs/core/settings' },
+                { text: 'Penyimpanan', link: '/id/docs/core/storage' }
+              ]
+            },
             {
               text: 'Panduan',
               items: [
                 { text: 'Memulai', link: '/id/docs/guides/getting-started' },
-                { text: 'Ekstensi', link: '/id/docs/guides/extensions' },
-                { text: 'Pengaturan Pembaca', link: '/id/docs/guides/reader-settings' },
-                { text: 'Penyelesaian Masalah', link: '/id/docs/guides/troubleshooting' }
+                { text: 'Penyelesaian Masalah', link: '/id/docs/guides/troubleshooting' },
+                { text: 'Migrasi Sumber', link: '/id/docs/guides/source-migration' },
+                { text: 'Pencadangan', link: '/id/docs/guides/backups' },
+                { text: 'Pelacakan', link: '/id/docs/guides/tracking' },
+                { text: 'Kategori', link: '/id/docs/guides/categories' },
+                { text: 'Sumber Lokal', link: '/id/docs/guides/local-source' },
+                { text: 'Pengaturan Pembaca', link: '/id/docs/guides/reader-settings' }
               ]
             }
           ]
