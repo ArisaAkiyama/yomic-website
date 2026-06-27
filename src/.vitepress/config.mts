@@ -42,9 +42,14 @@ export default defineConfig({
                 { text: 'Downloads', link: '/docs/browse/downloads' }
               ]
             },
-            { text: 'Reader', link: '/docs/reader' },
-            { text: 'Settings', link: '/docs/settings' },
-            { text: 'Storage', link: '/docs/storage' },
+            {
+              text: 'Application',
+              items: [
+                { text: 'Reader', link: '/docs/core/reader' },
+                { text: 'Settings', link: '/docs/core/settings' },
+                { text: 'Storage', link: '/docs/core/storage' }
+              ]
+            },
             {
               text: 'Guides',
               items: [

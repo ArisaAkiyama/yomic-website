@@ -1,3 +1,0 @@
-﻿# Reader
-
-Coming soon...
