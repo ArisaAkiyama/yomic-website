@@ -54,6 +54,7 @@ export default defineConfig({
               text: 'Guides',
               items: [
                 { text: 'Getting started', link: '/docs/guides/getting-started' },
+                { text: 'Extensions', link: '/docs/guides/extensions' },
                 { text: 'Troubleshooting', link: '/docs/guides/troubleshooting' },
                 { text: 'Source migration', link: '/docs/guides/source-migration' },
                 { text: 'Backups', link: '/docs/guides/backups' },
@@ -114,6 +115,7 @@ export default defineConfig({
               text: 'Panduan',
               items: [
                 { text: 'Memulai', link: '/id/docs/guides/getting-started' },
+                { text: 'Ekstensi', link: '/id/docs/guides/extensions' },
                 { text: 'Penyelesaian Masalah', link: '/id/docs/guides/troubleshooting' },
                 { text: 'Migrasi Sumber', link: '/id/docs/guides/source-migration' },
                 { text: 'Pencadangan', link: '/id/docs/guides/backups' },
