@@ -33,7 +33,7 @@
 .VPHero .image-src {
   max-width: 280px;
   max-height: 280px;
-  animation: floatLaptop 6s ease-in-out infinite;
+  animation: floatingLaptop 6s ease-in-out infinite;
 }
 
 .VPHero .image-bg {
@@ -186,11 +186,8 @@
 }
 
 /* Floating Laptop Animation */
-@keyframes floatLaptop {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+@keyframes floatingLaptop {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
