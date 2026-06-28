@@ -172,7 +172,7 @@
 }
 
 /* Floating Laptop Animation */
-.VPHero .image-src {
+.VPHero .image-container {
   animation: floatLaptop 6s ease-in-out infinite;
   will-change: translate;
 }
