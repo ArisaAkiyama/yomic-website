@@ -21,7 +21,6 @@
   background: var(--vp-c-brand-1);
   filter: blur(80px);
   opacity: 0.2;
-  animation: breatheGlow 4s ease-in-out infinite alternate;
 }
 
 /* Enlarge Hero Image & Container */
@@ -33,7 +32,6 @@
 .VPHero .image-src {
   max-width: 280px;
   max-height: 280px;
-  animation: floatLaptop 6s ease-in-out infinite;
 }
 
 .VPHero .image-bg {
@@ -173,24 +171,38 @@
   display: none !important;
 }
 
-/* Breathing Glow Animation */
-@keyframes breatheGlow {
-  0% {
-    opacity: 0.12;
-    filter: blur(80px) scale(0.95);
-  }
-  100% {
-    opacity: 0.28;
-    filter: blur(95px) scale(1.05);
-  }
+/* Floating Laptop Animation */
+.VPHero .image-src {
+  animation: floatLaptop 6s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
 }
 
-/* Floating Laptop Animation */
+/* Breathing Glow Animation */
+.VPHero .image-bg {
+  animation: breatheGlow 5s ease-in-out infinite alternate;
+  will-change: transform, opacity, filter;
+}
+
 @keyframes floatLaptop {
-  0%, 100% {
+  0% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes breatheGlow {
+  0% {
+    opacity: 0.15;
+    filter: blur(80px) scale(0.95);
+  }
+  100% {
+    opacity: 0.25;
+    filter: blur(90px) scale(1.05);
   }
 }
