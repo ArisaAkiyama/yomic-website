@@ -174,35 +174,36 @@
 /* Floating Laptop Animation */
 .VPHero .image-src {
   animation: floatLaptop 6s ease-in-out infinite;
-  transform-origin: center;
-  will-change: transform;
+  will-change: translate;
 }
 
 /* Breathing Glow Animation */
 .VPHero .image-bg {
   animation: breatheGlow 5s ease-in-out infinite alternate;
-  will-change: transform, opacity, filter;
+  will-change: opacity, filter, scale;
 }
 
 @keyframes floatLaptop {
   0% {
-    transform: translateY(0);
+    translate: 0 0;
   }
   50% {
-    transform: translateY(-8px);
+    translate: 0 -8px;
   }
   100% {
-    transform: translateY(0);
+    translate: 0 0;
   }
 }
 
 @keyframes breatheGlow {
   0% {
     opacity: 0.15;
-    filter: blur(80px) scale(0.95);
+    filter: blur(80px);
+    scale: 0.95;
   }
   100% {
     opacity: 0.25;
-    filter: blur(90px) scale(1.05);
+    filter: blur(90px);
+    scale: 1.05;
   }
 }
