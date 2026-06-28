@@ -33,7 +33,6 @@
 .VPHero .image-src {
   max-width: 280px;
   max-height: 280px;
-  animation: floatLaptop 6s ease-in-out infinite;
 }
 
 .VPHero .image-bg {
@@ -173,23 +172,14 @@
   display: none !important;
 }
 
-/* Animations */
-@keyframes floatLaptop {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
+/* Breathing Glow Animation */
 @keyframes breatheGlow {
   0% {
     opacity: 0.12;
-    transform: translate(-50%, -50%) scale(0.92);
+    filter: blur(80px) scale(0.95);
   }
   100% {
     opacity: 0.28;
-    transform: translate(-50%, -50%) scale(1.08);
+    filter: blur(95px) scale(1.05);
   }
 }
